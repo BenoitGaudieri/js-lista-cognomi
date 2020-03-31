@@ -66,10 +66,17 @@ body {
 }
 
 .btn--grn {
-    padding: 10px 30px;
+    padding: 10px;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
+}
+
+.btn--orng {
+    padding: 10px;
+    color: #fff;
+    background-color: #ff5e00;
+    border-color: #ff5e00;
 }
 
 .form-control {

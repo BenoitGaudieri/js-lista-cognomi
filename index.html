@@ -18,12 +18,17 @@
                 <h3 class="p--set-title">Inserisci il tuo cognome</h3>
                 <h4 class="p--set-margin">😮Anche in minuscolo!😮</h4>
 
-                <input type="text" id="new-surname" class="form-control">
-                <button id="add" class="btn btn--primary">Aggiungi</button>
+                <div class="p--set-margin">
+                    <input type="text" id="new-surname" class="form-control" placeholder="Scrivi e premi invio!">
+                    <button id="add" class="btn btn--primary">Aggiungi</button>
+                </div>
 
-                <h3 class="p--set-margin">Lista cognomi</h3>
-                <ul id="surname-list"></ul>
-                <div id="position" class="p--set-margin p--set-importance"></div>
+                <div id="elenco" class="hide">
+                    <h3>Lista cognomi:</h3>
+                    <ul id="surname-list" class="p--set-margin"></ul>
+                    <div id="position" class="p--set-margin p--set-importance"></div>
+                    <button id="hide" class="btn btn--orng">Nascondi</button>
+                </div>
 
             </div>
         </div>

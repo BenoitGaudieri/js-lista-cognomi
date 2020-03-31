@@ -33,9 +33,25 @@ btnAdd.addEventListener("click", function() {
     }
 
     // output
+    document.getElementById("elenco").className = "show";
     surnameList.innerHTML = items;
 
     // reset
     newSurname.value = "";
     newSurname.focus();
+});
+
+// EXTRA
+// Press enter in the form to trigger the button event
+newSurname.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        btnAdd.click();
+    }
+});
+
+// Button to hide the list
+var btnHide = document.getElementById("hide");
+btnHide.addEventListener("click", function() {
+    document.getElementById("elenco").className = "hide";
 });
