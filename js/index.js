@@ -4,6 +4,7 @@ var surnameList = document.getElementById("surname-list");
 var btnAdd = document.getElementById("add");
 var list = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
 
+newSurname.focus();
 // Event Listener
 btnAdd.addEventListener("click", function() {
     // Capitalize surname value
@@ -19,7 +20,6 @@ btnAdd.addEventListener("click", function() {
 
     // Sort list
     list.sort();
-    console.log(list);
 
     // Index Of
     document.getElementById(
@@ -54,4 +54,26 @@ newSurname.addEventListener("keyup", function(event) {
 var btnHide = document.getElementById("hide");
 btnHide.addEventListener("click", function() {
     document.getElementById("elenco").className = "hide";
+    newSurname.focus();
+});
+
+// Button to reset the list
+var btnReset = document.getElementById("reset");
+btnReset.addEventListener("click", function() {
+    list = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
+    list.sort();
+    var items = "";
+
+    for (var i = 0; i < list.length; i++) {
+        items += "<li><span>" + list[i] + "</span></li>";
+    }
+
+    // output
+    document.getElementById("elenco").className = "show";
+    surnameList.innerHTML = items;
+
+    // reset
+    newSurname.value = "";
+    newSurname.focus();
+    document.getElementById("position").innerHTML = "Lista originale";
 });
