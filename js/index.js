@@ -10,7 +10,7 @@ btnAdd.addEventListener("click", function() {
     var surnameCap =
         newSurname.value.charAt(0).toUpperCase() +
         newSurname.value.substring(1);
-    // Aggiunta str alla lista
+    // Add capitalized surname to list
     list.push(surnameCap);
 
     // Empty str for output
@@ -21,7 +21,11 @@ btnAdd.addEventListener("click", function() {
     console.log(list);
 
     // Index Of
-    console.log(list.indexOf(surnameCap));
+    document.getElementById("position").innerHTML =
+        surnameCap +
+        " sei il numero " +
+        (list.indexOf(surnameCap) + 1) +
+        " della lista!";
 
     // Aggiunta alla str d'output
     for (var i = 0; i < list.length; i++) {

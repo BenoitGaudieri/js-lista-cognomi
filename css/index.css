@@ -33,6 +33,12 @@ body {
     margin: 0 0 20px;
 }
 
+.p--set-importance {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ff5100;
+}
+
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -93,7 +99,7 @@ body {
     border-radius: 45px;
     background-color: #f0ece1;
     min-height: 600px;
-    width: 400px;
+    min-width: 400px;
     margin: 0 30px;
     padding: 20px 25px;
 }
