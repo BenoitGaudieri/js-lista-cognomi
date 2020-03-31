@@ -6,10 +6,14 @@ var list = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
 
 // Event Listener
 btnAdd.addEventListener("click", function() {
-    // aggiunta str alla lista
-    list.push(newSurname.value);
+    // Capitalize surname value
+    var surnameCap =
+        newSurname.value.charAt(0).toUpperCase() +
+        newSurname.value.substring(1);
+    // Aggiunta str alla lista
+    list.push(surnameCap);
 
-    // reference di str vuota per output
+    // Empty str for output
     var items = "";
 
     // Sort list
@@ -17,7 +21,7 @@ btnAdd.addEventListener("click", function() {
     console.log(list);
 
     // Index Of
-    console.log(list.indexOf(newSurname.value));
+    console.log(list.indexOf(surnameCap));
 
     // Aggiunta alla str d'output
     for (var i = 0; i < list.length; i++) {
