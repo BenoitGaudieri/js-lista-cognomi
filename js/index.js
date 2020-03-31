@@ -21,7 +21,7 @@ btnAdd.addEventListener("click", function() {
 
     // Aggiunta alla str d'output
     for (var i = 0; i < list.length; i++) {
-        items += "<li>" + list[i] + "</li>";
+        items += "<li><span>" + list[i] + "</span></li>";
     }
 
     // output

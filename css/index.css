@@ -92,7 +92,7 @@ body {
 .box {
     border-radius: 45px;
     background-color: #f0ece1;
-    height: 300px;
+    min-height: 600px;
     width: 400px;
     margin: 0 30px;
     padding: 20px 25px;
@@ -100,4 +100,12 @@ body {
 
 #surname-list li {
     list-style: none;
+    text-align: left;
+    border-bottom: 3px #ccc solid;
+    border-radius: 20px;
+}
+
+#surname-list li span {
+    margin: 0 10px;
+    font-size: 22px;
 }
