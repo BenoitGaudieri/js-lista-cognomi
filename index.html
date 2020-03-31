@@ -18,7 +18,15 @@
                 <h3 class="p--set-title">Inserisci il tuo cognome</h3>
                 <h4 class="p--set-margin">😮Anche in minuscolo!😮</h4>
 
-                <div class="p--set-margin">
+                <div class="relative p--set-margin">
+                    <div id="error-balloon" class="hide">
+                        <div class="absolute balloon">
+                            <div class="angle">
+                                <p>Inaccettabile! 😱</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <input type="text" id="new-surname" class="form-control" placeholder="Scrivi e premi invio!">
                     <button id="add" class="btn btn--grn">Aggiungi</button>
                 </div>

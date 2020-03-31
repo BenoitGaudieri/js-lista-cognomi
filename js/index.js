@@ -50,13 +50,15 @@ btnAdd.addEventListener("click", function() {
         // output
         document.getElementById("elenco").className = "show";
         surnameList.innerHTML = items;
+        document.getElementById("error-balloon").className = "hide";
 
         // reset
         newSurname.value = "";
         newSurname.focus();
     } else {
         newSurname.value = "";
-        alert("Nome non valido!");
+        // alert("Nome non valido!");
+        document.getElementById("error-balloon").className = "show bounce";
     }
 });
 
@@ -90,6 +92,7 @@ btnReset.addEventListener("click", function() {
     // output
     document.getElementById("elenco").className = "show";
     surnameList.innerHTML = items;
+    document.getElementById("error-balloon").className = "hide";
 
     // reset
     newSurname.value = "";
